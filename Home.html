@@ -1,35 +1,96 @@
 <!DOCTYPE html>
 <!--This is a website about bananas-->
 <html>
+    <style>
+        .yellow-border{
+            border-color: yellow;
+            border-style: solid;
+            border-radius: 100%;
+            border-width: 20px;
+            margin-left: 250px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .smaller-image{
+            width: 300px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        h2{
+            font-size: 30px;
+        }
+
+        body{
+            font-family: sans-serif;
+            background-color: lightyellow;
+        }
+
+        #index-color{
+            background-color: orange;    
+        }
+
+        #info-color{
+            background-color: greenyellow;
+           
+        }
+
+        #list-color{
+            background-color: lightblue;
+        }
+
+        #question-color{
+            background-color:lightsalmon;
+        }
+
+        .styling-divisions{
+            margin: 30px 40px 30px 40px;
+            padding: 20px;
+        }
+
+    </style>
     <head><title>Bananas</title></head>
     <body>
         <main>
         <h1>Bananas</h1>
+        <div id = "index-color" class = "styling-divisions">
         <h2>Index</h2>
         <ol>
             <li><a href ="#whatarebananas-header">What are bananas?</a></li>
             <li><a href ="#listofthings-header">List of things you can make with them</a></li>
+            <li><a href = "#question-header">Question</a></li>
         </ol>
-        <img src = "banana-image.jpg" alt = "image of banana">
-        <img src = "banana-image.jpg" alt = "image of banana">
-        
+        </div>
+        <img class = "yellow-border smaller-image" src = "banana-image.jpg" alt = "image of banana">
+        <div id= "info-color" class = "styling-divisions">
         <h2 id = "whatarebananas-header">What are Bananas?</h2>
         <p>They are pretty cool fruits</p>
+        </div>
+        <div id = "list-color" class = "styling-divisions">
         <h2 id = "listofthings-header">List of things you can make with them:</h2>
             <ul>
                 <li>Banana bread</li>
                 <li>Banana sundae</li>
                 <li>Banana muffin</li>
             </ul>
+        </div>
+        <div id = "question-color" class = "styling-divisions">
+        <h2 id = "question-header">Question</h2>
+        <p>Do you like bananas?</p>
         <form action ="Data.html">
             <label for = "yes">
                 <input type = "radio" name = "yes-no" required>Yes
             </label>
             <label for = "no">
                 <input type = "radio" name = "yes-no" required>No
-            </label>
-            <button type = "submit">Submit</button>
+            </label><br>
+            <button style = "margin-left: 25px; margin-top: 10px;" type = "submit">Submit</button>
         </form>
+        </div>
         </main>
     </body>
 </html>
