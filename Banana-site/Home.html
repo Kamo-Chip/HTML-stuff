@@ -1,0 +1,139 @@
+<link href= "https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+<!--This is a website about bananas-->
+<html>
+    <style>
+        .yellow-border{
+            border-color: yellow;
+            border-style: solid;
+            border-radius: 100%;
+            border-width: 20px;
+            margin-left: 250px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .image{
+            width: 400px;
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 70px;
+            font-family: "Fredoka One", monospace;
+        }
+
+        h2{
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+
+        body{
+            font-family: sans-serif;
+            background: linear-gradient(90deg, yellow, lightgreen);
+            
+        }
+
+        #index-color{
+            background-color: orange;    
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+
+        #info-color{
+            background-color: greenyellow;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23)
+        }
+
+        #list-color{
+            background-color: lightblue;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23)
+        }
+
+        #question-color{
+            background-color:lightsalmon;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23)
+        }
+
+        .styling-divisions{
+            margin: 40px 40px 30px 40px;
+            padding: 20px;
+        }
+
+        #recipe-link{
+            text-align: center;
+        }
+
+        a{
+            color: black;
+        }
+        a:hover{
+            color:blue;
+        }
+
+        nav li{
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul{
+            margin: 0px;
+            padding: 5px 0px 5px 30px;
+        }
+
+    </style>
+    <head><title>Bananas</title></head>
+    <body>
+        <main>
+        <header>
+            <h1>Bananas</h1>
+            <nav id = "navbar">
+                <ul>
+                    <li><a href = "#">Home</a></li>
+                    <li><a href = "#">More info</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id = "index-color" class = "styling-divisions">
+        <h2><u>Index</u></h2>
+        <ol>
+            <li><a href ="#whatarebananas-header">What are bananas?</a></li>
+            <li><a href ="#listofthings-header">List of things you can make with them</a></li>
+            <li><a href = "#question-header">Question</a></li>
+        </ol>
+        </div>
+        <hr>
+       <img class = "yellow-border image" src = "banana-image.jpg" alt = "image of banana">
+        <hr>
+       <div id= "info-color" class = "styling-divisions">
+        <h2 id = "whatarebananas-header"><u>What are Bananas?</u></h2>
+        <p>They are <em>pretty cool</em> fruits</p>
+        </div>
+        <div id = "list-color" class = "styling-divisions">
+        <h2 id = "listofthings-header"><u>List of things you can make with them:</u></h2>
+            <ul>
+                <li>Banana bread</li>
+                <li>Banana sundae</li>
+                <li>Banana muffin</li>
+            </ul>
+        <p id = "recipe-link"><a href = "https://www.forksoverknives.com/recipes/vegan-menus-collections/banana-recipes-ways-to-use-ripe-overripe-bananas/" target=_blank>More recipes</a></p>
+        </div>
+        <div id = "question-color" class = "styling-divisions">
+        <h2 id = "question-header"><u>Question</u></h2>
+        <p>Do you like bananas?</p>
+        <form action ="Data.html">
+            <label for = "yes">
+                <input type = "radio" name = "yes-no" required><strong>Yes</strong>
+            </label>
+            <label for = "no">
+                <input type = "radio" name = "yes-no" required><strong>No</strong>
+            </label><br>
+            <button style = "margin-left: 25px; margin-top: 10px;" type = "submit"><strong>Submit</strong></button>
+        </form>
+        </div>
+        </main>
+    </body>
+</html>
