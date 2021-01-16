@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+body{
+    background: #fff;
+    font-size: 1.35rem;
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+}
+
+.container{
+    display: grid;
+    background-color: #fff;
+    grid-template-areas: "header" "header" "header"
+                         "product" "content" "email"
+                         "footer" "footer" "footer";
+    grid-template-rows: auto auto auto;
+    margin-left: -.47rem;
+    overflow: hidden;
+}
+
+.item1{
+    grid-area: "header";
+    background-color: #EB3C33;
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+ 
+}
+
+.item2{
+    grid-area: "product";
+    width: 40%;
+    margin: 9rem 0 0rem 5rem;  
+    position: relative;
+}
+
+#pill-img{
+    width: 500px;
+    height: 706px;
+
+}
+
+.item3{
+    grid-area: "content";
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    width: 60rem;
+    height: 11rem;
+    left: 45rem;
+    bottom: 35rem;
+    z-index: 0;
+   float: left;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    grid-area: "email";
+    position: relative;
+    left: 70rem;
+    bottom: 10rem;
+}
+
+form{
+    border-style: solid;
+    border-width: 0.5rem;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 21rem;
+    right: 25rem;
+    max-width: 15rem;
+    padding: 2rem 2rem 2rem 2rem;
+    animation-name: border;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+#p{
+    position: relative;
+    bottom: 20rem;
+    right: 25rem;
+    margin-top: 4rem;
+}
+
+@keyframes border{
+    0%{
+        border-color: #fff;
+    }
+    25%{
+        border-color: #eb3c33c5;
+    }
+    50%{
+        border-color: #EB3C33;
+    }
+    75%{
+        border-color: #eb3c33c5;
+    }
+    100%{
+        border-color: #fff;
+    }
+}
+#submit{
+    width: 5rem;
+    transform: scale(1.2);
+    align-self: center;
+    margin-top: 1rem;
+    height: 1.7rem;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(40, 40, 92);
+    color: #fff;
+}
+
+#submit:hover{
+    transform: scale(1.3);
+}
+
+#email{
+    height: 1.6rem;
+    font-size: 1.2rem;
+}
+
+.item4{
+    grid-area: "footer";
+    height: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #EB3C33;
+  
+}
+
+#logo{
+    width: 272px;
+    height: 52px;
+    position: relative;
+    right: 47rem;
+    top: 0.75rem;
+ 
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    margin-left: -15rem; 
+  
+}
+
+nav ul li{
+    padding: 0.1rem 2rem 0.5rem 2rem;
+    list-style: none;
+ 
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color: #000;
+}
